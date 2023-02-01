@@ -62,3 +62,4 @@ Lo abrimos con cualquier editor de codigo y en la ultima linea colocamos:
 
 Usando el alias y la IP local para registrar nuestro dominio. Ahora solo queda reiniciar el servidor apache e intentamos acceder a este dominio.
         
+# Pasos iniciales con symfony
