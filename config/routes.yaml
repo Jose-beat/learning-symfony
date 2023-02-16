@@ -1,3 +1,25 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+#Estructura basica de una ruta
+#Nombre de la ruta
+index:
+#Direccion base de la ruta
+    path: /inicio
+#Direccion del controlador al que va dirigido
+    controller: App\Controller\HomeController::index
+
+animals:
+#Direccion que acepta argumentos, en este caso name es opcional por el signo y lastname es obligatorio
+    path: /animals/{name?}/{lastname}
+    controller: App\Controller\HomeController::animals
+#Definimos variables por defecto para cada parametro, haciendolos automaticamente opcionales
+    defaults: {name: 'Animal por defecto', lastname: 'Apellido del perrijo'}
+#Definimos metodos por defecto para la pagina
+    methods: [POST, GET]
+#Como requerimientos definirmos regulaciones para los parametros, en este caso cada uno debe contener caracteres de la A a la Z con espacios y minusculas o mayusculas
+    requirements:
+        name: '[a-zA-z ]+'
+#        lastname: '[0-9]+'
+        lastname: '[0a-zA-z ]+'
+
+redirection:
+    path: /redirection
+    controller: App\Controller\HomeController::redirection

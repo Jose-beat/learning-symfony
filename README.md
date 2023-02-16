@@ -63,3 +63,17 @@ Lo abrimos con cualquier editor de codigo y en la ultima linea colocamos:
 Usando el alias y la IP local para registrar nuestro dominio. Ahora solo queda reiniciar el servidor apache e intentamos acceder a este dominio.
         
 # Pasos iniciales con symfony
+
+Primero veremos las propiedades de los comandos en symfony, los cuales se basan en el siguiente comando que es el:
+
+    php bin/console help
+
+El comando anterior nos ayuda a desplegar la lista de comandos mas comunes usados
+
+Vamos a crear un controlador usando:
+    php bin/console make:controller <Nombre del controlador>
+
+Con este comando creamos el controlador y una vista perteneciente a este.
+
+Con el objetivo de centrar las rutas vamos a buscar el archivo *routes.yaml* en la ruta _config/_ 
+
