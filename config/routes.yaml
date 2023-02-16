@@ -14,7 +14,7 @@ animals:
     defaults: {name: 'Animal por defecto', lastname: 'Apellido del perrijo'}
 #Definimos metodos por defecto para la pagina
     methods: [POST, GET]
-#Como requerimientos definirmos regulaciones para los parametros, en este caso cada uno debe contener caracteres de la A a la Z con espacios y minusculas o mayusculas de tipo
+#Como requerimientos definirmos regulaciones para los parametros, en este caso cada uno debe contener caracteres de la A a la Z con espacios y minusculas o mayusculas de este tipo
     requirements:
         name: '[a-zA-z ]+'
 #        lastname: '[0-9]+'
